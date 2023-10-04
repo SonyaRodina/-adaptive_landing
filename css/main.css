@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    height: 60px;
+    padding-top: 3px;
+    padding-left: 46px;
+    padding-right: 46px;
+
+    line-height: 52px;
+    text-align: center;
+    border: white solid 2px;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*HEADER*/
+.header {
+    height: 151px;
+    background-color: #181818;
+}
+
+.header-container {
+    max-width: 1087px;
+    height: 119px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav a {
+    margin-right: 41px;
+}
+
+
+/* MAIN/HERO */
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #181818;
+} 
+
+.hero {
+    padding-top: 60px;
+    padding-bottom: 152px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 88px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+
+h1~p {
+    margin: 0;
+    margin-bottom: 85px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 390px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.button-primary {
+    background-color: #4452FE;
+    border: none;
+}
+
+.hero-banner {
+    height: 993px;
+    /* background-color: #181818; */
+    background-image: url(../img/screens.png);
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* FEATURES */
+.features {
+    padding-top: 162px;
+    padding-bottom: 162px;
+    background-color: #181818;
+}
+
+h2 {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px; 
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+
+h2~p {
+    margin-top: 27px;
+    margin-bottom: 80px;
+}
+
+.features-container-content {
+    max-width: 1087px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.freatures-banner {
+    position: relative;
+    height: 760px;
+}
+
+.freatures-banner:first-child {
+    width: 696px;
+}
+
+.freatures-banner > *+* {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+
+.title h3 {
+    text-indent: 10px;
+}
+
+.title img{
+    transform: translateY(-8px);
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+}
+
+.features-content {
+    text-align: left;
+    max-width: 269px;
+}
+
+.features-content > *+* {
+    margin-top: 65px;
+}
+
+.title {
+    display: inline-flex;
+}
+
+
+/* CONTENTS */
+.contents {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.contents p {
+    margin-bottom: 54px;
+}
+
+.container-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1087px;
+    margin: 0 auto;
+}
+
+
+/* GALLERY */
+.gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-gallery {
+    margin: 0 auto;
+    max-width: 1087px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-top {
+    display: flex;
+    max-width: 1000px;
+}
+
+.gallery-top > *+* {
+    margin-left: 30px;
+}
+
+.gallery-top > img {
+    margin-bottom: 44px;
+}
+
+.gallery-bottom {
+    display: flex;
+    max-width: 1087px;
+}
+
+.gallery-bottom > *+* {
+    margin-left: 30px;
+}
+
+.gallery-bottom > img {
+    margin-bottom: 44px;
+}
