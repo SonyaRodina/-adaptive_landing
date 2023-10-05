@@ -68,8 +68,10 @@ p {
 }
 
 .header-container {
-    max-width: 1087px;
+    max-width: 1137px;
     height: 119px;
+    padding-left: 25px;
+    padding-right: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,11 +157,13 @@ h2~p {
 }
 
 .features-container-content {
-    max-width: 1087px;
+    max-width: 1137px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .freatures-banner {
