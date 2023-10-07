@@ -514,7 +514,7 @@ address {
     }
 
     .container-partners {
-        width: 289px;
+        max-width: 289px;
     }
 
     .partners-icons-row li:nth-child(4n) {
@@ -647,6 +647,14 @@ address {
 
     .partners-icons-row li {
         margin-left: 0;
+    }
+
+    .testimonial-container {
+        max-width: 320px;
+    }
+
+    .testimonial-list {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .testimonial-item {
