@@ -692,15 +692,31 @@ address {
         padding-left: 25px;
         padding-right: 25px;
     }
-    
-    .dropbtn {
-        width: 60px;
+
+    .menu-mini {
+        max-width: 140px;
     }
 
-    .dropdown-content a {
-        padding: 2px 10px;
+    .dropdown {
+        top: 83px;
+        left: 18px;
+        position: absolute;
     }
     
+    .dropbtn {
+        transform: scale(-1, 1);
+        }
+
+    .dropdown-content {
+        left: 0;
+        text-align: start;
+    }
+    
+    .dropdown-content a {
+        display: inline;
+        padding: 5px 10px;
+    }
+        
     .show {
         display: block;
     }
