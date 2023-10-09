@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fifma land</title>
+    <script defer src="./main.js"></script>
     <link rel="stylesheet" href="./css/narmalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +18,24 @@
             <a href="#">
                 <img src="./img/logo.svg" alt="logotype">
             </a>
-            <nav>
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Product</a>
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Contact</a>
-            </nav>
-            <a class="button">Login</a>
+            <div class="menu-mini">
+                <nav>
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Product</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+                <a class="button">Login</a>
+                <div class="dropdown">
+                    <a> <img src="./icon/menu.svg" alt="menu" onclick="myFunction()" class="dropbtn"></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#" >Home</a>
+                        <a href="#">Product</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 

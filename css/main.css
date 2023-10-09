@@ -60,6 +60,9 @@ p {
     cursor: pointer;
 }
 
+.dropdown {
+    display: none;
+}
 
 /*HEADER*/
 .header {
@@ -76,6 +79,13 @@ p {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+
+.menu-mini {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 705px;
 }
 
 nav a {
@@ -400,16 +410,20 @@ address {
         max-width: 950px;
     }
 
+    .menu-mini {
+        justify-content: end;
+    }
+
     .features-container-content {
         flex-direction: column;
     }
 
-    .freatures-banner > *+* {
-        left: 25%;
-    }
-
     .freatures-banner {
         margin-bottom: 130px;
+    }
+
+    .freatures-banner > *+* {
+        left: 25%;
     }
 
     h2~p {
@@ -446,6 +460,51 @@ address {
         font-size: 60px;
         font-weight: 400;
         line-height: 77px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-mini {
+        max-width: 222px;
+    }
+
+    .dropdown {
+        right: -10px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        border: none;
+        cursor: pointer;
+        }
+
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        min-width: 45px;
+        text-align: end;
+        overflow: auto; 
+        box-shadow: opx 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+        
+    .show {
+        display: block;
     }
 
     .hero p {
@@ -500,9 +559,8 @@ address {
         margin-bottom: 60px;
     }
 
-    .partners-icons-row {
-        align-items: center;
-        justify-content: center;
+    .container-partners {
+        max-width: 289px;
     }
 
     .partners-icons-row li{
@@ -511,10 +569,6 @@ address {
 
     .partners-icons-row li:first-child {
         margin-left: 0;
-    }
-
-    .container-partners {
-        max-width: 289px;
     }
 
     .partners-icons-row li:nth-child(4n) {
@@ -591,7 +645,6 @@ address {
     
     .freatures-banner > *+* {
         width: 232px;
-        position: absolute;
         top: 75%;
         left: 15%;
     }
@@ -638,6 +691,18 @@ address {
     h1~p {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    
+    .dropbtn {
+        width: 60px;
+    }
+
+    .dropdown-content a {
+        padding: 2px 10px;
+    }
+    
+    .show {
+        display: block;
     }
 
     .partners-icons-row {
